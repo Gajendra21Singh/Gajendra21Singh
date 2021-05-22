@@ -24,3 +24,7 @@ puts str.downcase
 puts "-----------------------"
 puts str_name
 puts $company_name
+
+#String concat() method
+str_name.concat(" MCA , BCA ")
+puts str_name.concat(" from UP "," asd"," beryl ", 28000)
