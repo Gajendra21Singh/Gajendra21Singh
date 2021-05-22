@@ -28,3 +28,8 @@ puts $company_name
 #String concat() method
 str_name.concat(" MCA , BCA ")
 puts str_name.concat(" from UP "," asd"," beryl ", 28000)
+
+
+#String escaping and interpolation
+str_esca = 'i am "gajendra singh"'
+puts str_esca + "mca students"
