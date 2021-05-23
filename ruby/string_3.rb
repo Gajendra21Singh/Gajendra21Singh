@@ -39,3 +39,10 @@ str_3.each_char{|k| print k,'@'}
 #str_3 = "asdfghjklllllllll;;pppppppppppokjmnvghgfcxfghygfcvghvbhbnb"
 puts ''
 puts str_3.lstrip
+
+# == , === , insert
+str_1 = "gajendra"
+str_2 = 10
+puts str_1 === str_2
+str_1.insert(5,'singh')
+puts str_1

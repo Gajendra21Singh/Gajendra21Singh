@@ -27,7 +27,7 @@ puts str_4
 puts str_4.length
 puts str_4.bytesize
 puts str_4.size
-puts str_4.bytes
+puts "bytes =#{str_4.bytes}"
 puts str_4.b
 puts '_________________________________________________________'
 
@@ -37,6 +37,8 @@ puts str_5.byteslice(3,5)
 puts str_5.byteslice(-4,1)
 puts str_5.byteslice(4,8)
 puts str_5.byteslice(0,6)
+puts str_5.bytesize
+
 puts '_________________________________________________________'
 
 str_6 = 'ruby on rails'
@@ -57,3 +59,5 @@ str_11 = 'vicky'
 puts str_11
 str_7 = str_11.center(6,'12')
 puts str_7
+str_2 = "hellocfvlobvgloovffc"
+puts str_2.delete('cvf',"^v")
