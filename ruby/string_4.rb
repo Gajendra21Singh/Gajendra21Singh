@@ -11,3 +11,10 @@ puts str.count('ba')
 puts str.count('ab')
 puts str.count('aaccd','c')
 puts str.empty?
+
+s = "Gajendra Singh Vicky "
+s1 = s.slice(5..15)
+puts s1
+s1 = s.slice(5,15)
+puts s.swapcase
+puts s.split
