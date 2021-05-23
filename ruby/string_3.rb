@@ -25,5 +25,17 @@ puts "s = #{str_1}"
 puts "___________________________________________________________________________"
 
 str_3 = "gaje"
-str_3.concat("endra",32,"singh")
+str_3.concat("endra",32,"singh",32,'ajsncf')
 puts str_3
+
+# count
+puts str_3.count('e')
+puts str_3.delete('c-n')
+puts str_3
+#each_byte and each_char
+str_3.each_byte{|d| print d,' '}
+puts ''
+str_3.each_char{|k| print k,'@'}
+#str_3 = "asdfghjklllllllll;;pppppppppppokjmnvghgfcxfghygfcvghvbhbnb"
+puts ''
+puts str_3.lstrip
