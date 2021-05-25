@@ -20,4 +20,26 @@ puts "==========================================================================
 arr_2.prepend("ruby")
 puts "#{arr_2}"
 puts "================================================================================"
-#transpone 
+#transpose
+matrix = [[1,2],
+          [5,4],
+        [19,23]]
+puts "ARRAY TRANSPOSE METHODS = #{matrix.transpose}"
+puts "================================================================================"
+#to_h
+puts "#{matrix.to_h}"
+puts "================================================================================"
+puts "#{matrix.to_a}"
+puts "#{matrix.to_ary}"
+puts "================================================================================"
+# take_while and take
+puts "#{arr_1.take_while {|n| n<=8}}"
+puts "#{arr_1.take(4)}"
+puts "================================================================================"
+# sum and join , flatten
+arr_2 = [7,8,9,10]
+puts "Arr_2 sum = #{arr_2.sum(0.0)}"
+puts "Arr_2 sum method = #{arr_2.sum(0.0) {|n| n*2}}"
+arr_2.unshift("asv","pu")
+puts "Arr_2 Join = #{arr_2.join(" ")}"
+puts "matrix flatten = #{matrix.flatten(1)}"
