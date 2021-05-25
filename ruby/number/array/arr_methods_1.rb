@@ -33,6 +33,7 @@ puts "Array = #{arr_1}"
 puts "======================================================================="
 
 # include
+puts "INCLUDE"
 puts "Array = #{arr_1.include?(true)}"
 
 #delete_at(index)
