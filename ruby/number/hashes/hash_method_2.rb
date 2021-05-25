@@ -29,16 +29,20 @@ a = {"g" => 23, "h" => 25, "x"=>3432, "y"=>3453, "z"=>676}
 p a.has_key?("x")
 p a.has_key?("p")
 
-#has_value?
-puts "value =#{product.has_value?(102)}"
-
+#has_value? and value?
+puts "Has value =#{product.has_value?(102)}"
+puts "Value? = #{product.value?(103)}"
 #include? for key
 puts "key =#{product.include?("product price")}"
 
 puts product
-#invert
+#invert and to_h
 pro = product.invert
-puts pro
+puts "pro invert = #{pro}"
+puts "pro keys = #{pro.keys}"
+h = pro.to_h{|key,value| [value,key]}
+puts "H to_h = #{h}"
+
 
 #key?
 puts pro.key?("motorola")
@@ -49,9 +53,9 @@ puts pro.member?(9985.85)
 #keys and length
 puts "#{pro.keys} and #{pro.length}"
 
-#merge and merge!
-puts pro.merge(product)
-
+#merge and merge! and update
+puts "Merge = #{pro.merge(product)}"
+puts "Update = #{h.update(my_hash)}"
 #rehash
 x = [ "x", "g" ]
 y = [ "y", "f" ]
