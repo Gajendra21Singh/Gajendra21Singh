@@ -21,3 +21,14 @@ array_map[1]=24
 array_map[0]["1"] = "gajendr singh"
 puts "Array index 1 = #{array_map[1]}"
 puts "Array hash value = #{array_map[0]["1"]}"
+
+
+arr = Array.new(4) {Hash.new}
+arr[0] = {"n1" => 1234, "name" => "gajendra"}
+puts arr
+
+arr = Array.new(3,"String".slice(3..6))
+puts "#{arr}"
+
+arr = Array.new(4) {|g| g.to_s}
+puts "#{arr}"
