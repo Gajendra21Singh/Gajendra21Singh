@@ -49,4 +49,12 @@ puts num
 num1 = num.to_s
 puts "Num1 to_s = #{num1.class}"
 
+#transform_values and transform_values!
+num1 = num.transform_values{|value| value*2}
+puts num1
+num.transform_values!{|value| value*10}
+puts num
+
+h3 = num.merge!(num1){|key,old_value,new_value| old_value+new_value}
+puts h3
 puts "Finished Program "
