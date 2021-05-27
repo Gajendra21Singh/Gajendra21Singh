@@ -19,7 +19,7 @@ puts "==========================================================================
 puts "#{num1.rindex(45)}"
 puts "Lenght = #{num1.size}"
 #reject
-puts "#{num1.reject! {|item| item<12 }}"
+puts "#{num1.reject {|item| item<45 }}"
 puts "#{num1}"
 puts "=========================================================================="
 # min , max
