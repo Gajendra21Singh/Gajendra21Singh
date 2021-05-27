@@ -1,7 +1,7 @@
 str_1 = "Gajendra\r\n"
 str_1 = str_1.chomp()
 puts str_1
-str_1 = "vicky \ a singh \n\r\n"
+str_1 = "vicky singh \n\r\n"
 puts str_1.chomp
 
 # "hello\n\r".chomp            #=> "hello\n"
@@ -13,7 +13,7 @@ puts "hello".chomp!('')    #=> "hello"
 
 puts "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-str_1 = "Gajendra\r\n"
+str_1 = "Gajendra"
 str_1 = str_1.chop
 puts str_1
 str_1 = "vicky \r singh"
