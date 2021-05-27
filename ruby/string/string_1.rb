@@ -18,6 +18,8 @@ puts str * 5
 # .capitalize , .upcase , .reverse , .downcase
 puts str_name.upcase
 puts $company_name.capitalize
+puts "String = #{$company_name}"
+puts "Reverse String"
 puts $company_name.reverse
 puts str.downcase
 
