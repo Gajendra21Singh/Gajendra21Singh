@@ -1,8 +1,5 @@
-# if else statement
-puts "Please Enter the marks"
-a = gets.chomp.to_i
-puts "#{a} , #{a.class}"
-=begin
+# if else statemen
+a = gets.to_i
 if a<33
   puts '"Fail"'
 elsif a>=33 and a <=40
@@ -20,4 +17,5 @@ elsif a>80 && a<=90
 elsif a>90 and a<=100
   puts '"A1 Grade"'
 end
-=end
+
+puts "A = #{a}"
