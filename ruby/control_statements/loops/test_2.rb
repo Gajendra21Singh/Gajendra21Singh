@@ -22,7 +22,7 @@ end
 puts "==========================================================="
 puts "pyramid"
 n1 = 0
-$num = 4
+$num = 5
 while n1 < $num do
   s = n1 + 1
   while s < $num do
@@ -31,7 +31,7 @@ while n1 < $num do
   end
   j = 0
   while j < (2*n1+1) do
-    print "* "
+    print "*"
     j += 1
   end
   puts ""
