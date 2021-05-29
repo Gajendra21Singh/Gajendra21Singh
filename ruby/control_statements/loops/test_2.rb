@@ -31,7 +31,7 @@ while n1 < $num do
   end
   j = 0
   while j < (2*n1+1) do
-    print "*"
+    print "* "
     j += 1
   end
   puts ""
