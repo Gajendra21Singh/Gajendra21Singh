@@ -37,4 +37,16 @@ while n1 < $num do
   puts ""
   n1 = n1 + 1
 end
+puts "==========================================================="
+puts "enter the row"
+n = gets.chomp.to_i
+for i in 1..n do
+  for j in 1..(i-1) do
+    print " "
+  end
+  for k in i..n do
+    print "*"
+  end
+  puts ""
+end
 puts "FINISED"
