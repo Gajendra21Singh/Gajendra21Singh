@@ -22,3 +22,22 @@ until $i > $num  do
    puts("Inside the loop i = #$i" )
    $i +=1;
 end
+
+#iterators
+i = 5
+i.times do
+  puts "countdown #{i}"
+  i -= 1
+end
+
+1.upto(10) do
+  print "Hello "
+end
+
+puts ""
+
+#downto
+5.downto(1) {print "Hi "}
+
+#(1..5).each
+(1..5).each {puts "AA "}
