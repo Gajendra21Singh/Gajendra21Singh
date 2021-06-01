@@ -5,6 +5,7 @@ color = {
     "Marigold" => "yellow",
     "Jasmine" => "white"
   }
+  puts "#{color.size}"
 color.each do |key, value|
 puts "#{key} color is = #{value}"
 end
