@@ -1,5 +1,5 @@
 #file io
-cFile = File.new("~\Documents\test\training\Linux\file_1.txt","w")
+cFile = File.new("file_1.txt","w")
 if cFile
   cFile.syswrite("Gajendra Singh")
 else
