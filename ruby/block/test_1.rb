@@ -27,3 +27,4 @@ arr_2.find_all {|element| print "#{element} " if element%5 == 0}
 puts ""
 num = [*2..10]
 puts "#{num}"
+num.select {|n| print "#{n} " if n%2 != 0}
