@@ -18,6 +18,9 @@ puts "Array 1 id = #{arr_1.object_id}"
 arr_1 = ["asx",123,52.142,3-4i,true,nil]
 puts "Array 1  = #{arr_1}"
 puts "Array 1 id = #{arr_1.object_id}"
+arr_1.push(115)
+puts "Array 1  = #{arr_1}"
+puts "Array 1 id = #{arr_1.object_id}"
 
 # array inside array
 nested_array_1 = [1,2,nil,[55,41,true,"ruby"],"array"]

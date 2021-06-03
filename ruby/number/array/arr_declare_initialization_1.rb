@@ -30,5 +30,7 @@ puts arr
 arr = Array.new(3,"String".slice(3..6))
 puts "#{arr}"
 
-arr = Array.new(4) {|g| g.to_s}
+arr = Array.new(4) {|g| g.to_i}
 puts "#{arr}"
+a = arr.select {|i| i%2 == 0}
+puts "#{a}"
