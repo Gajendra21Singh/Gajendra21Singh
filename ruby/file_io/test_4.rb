@@ -3,9 +3,9 @@
 #using all file writeing methods
 
 #FILE WRITE
-newFile = File.new("file_2.txt","w")
+newFile = File.new("file_2.txt","a+")
 if newFile
-  newFile.syswrite("ruby on rails")
+  newFile.syswrite("fullstack developer and dsa")
 else
   puts "file not created"
 end
@@ -13,9 +13,11 @@ newFile.close
 
 
 #FILE reading
-newFile = File.open("file_2.txt","r")
+#puts "CHECK FILE IS EXISTS OR NOT"
+newFile = File.open("file_2.txt","r") if File::exists?("file_2.txt")
 if newFile
-  newFile.gets
+  contant = newFile.gets
+  puts contant
 else
   puts "file not open"
 end
