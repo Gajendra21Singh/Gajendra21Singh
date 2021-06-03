@@ -27,7 +27,7 @@ fileopen = File.open("file_1.txt","a+")
 if fileopen
   fileopen.gets
   fileopen.syswrite("Berylsystems private limited")
-  fileopen.gets
+  #fileopen.gets
 else
   puts "file not open"
 end
