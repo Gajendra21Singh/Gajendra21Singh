@@ -1,0 +1,3 @@
+class StudentBookDetail < ApplicationRecord
+  
+end
