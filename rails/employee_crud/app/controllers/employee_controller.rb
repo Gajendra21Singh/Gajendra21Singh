@@ -114,4 +114,7 @@ class EmployeeController < ApplicationController
   def emp_form_tag
 
   end
+  def button_tag
+
+  end  
 end

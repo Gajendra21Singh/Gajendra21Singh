@@ -16623,3 +16623,216 @@ Processing by EmployeeController#emp_form_tag as HTML
 Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 4145)
 
 
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:56:43 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 1.5ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 4848)
+Completed 200 OK in 14ms (Views: 12.5ms | Allocations: 6003)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 12:56:57 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 0.5ms | Allocations: 159)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.5ms | Allocations: 256)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3517)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 4052)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 12:57:04 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.4ms | Allocations: 249)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3403)
+Completed 200 OK in 8ms (Views: 7.6ms | Allocations: 3809)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 12:58:18 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 0.9ms | Allocations: 299)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 1.1ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4113)
+Completed 200 OK in 13ms (Views: 11.5ms | Allocations: 5256)
+
+
+Started POST "/employee/button_tag" for ::1 at 2021-06-17 12:58:44 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/employee/button_tag"):
+  
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 12:58:58 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 0.5ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.6ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3528)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 3934)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 12:59:00 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 0.5ms | Allocations: 185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.7ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3525)
+Completed 200 OK in 9ms (Views: 7.8ms | Allocations: 3930)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 13:00:52 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 0.9ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.7ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4121)
+Completed 200 OK in 12ms (Views: 10.2ms | Allocations: 5270)
+
+
+Started POST "/employee/edit_page" for ::1 at 2021-06-17 13:00:56 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/employee/edit_page"):
+  
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 13:01:02 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 1.4ms | Allocations: 188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.6ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3529)
+Completed 200 OK in 10ms (Views: 9.0ms | Allocations: 3935)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 13:02:37 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 0.8ms | Allocations: 653)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.4ms | Allocations: 245)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3979)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 4529)
+
+
+Started POST "/employee/edit_page" for ::1 at 2021-06-17 13:02:44 +0530
+Processing by EmployeeController#edit_page as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering employee/edit_page.html.erb within layouts/application
+  Rendered employee/edit_page.html.erb within layouts/application (Duration: 1.3ms | Allocations: 387)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.5ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3742)
+Completed 200 OK in 12ms (Views: 9.8ms | Allocations: 4311)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 13:03:37 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 2.4ms | Allocations: 331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.7ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 4145)
+Completed 200 OK in 13ms (Views: 10.9ms | Allocations: 5293)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 13:03:39 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 1.7ms | Allocations: 205)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.5ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3546)
+Completed 200 OK in 11ms (Views: 10.6ms | Allocations: 3952)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 13:03:51 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 2.7ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.7ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 4150)
+Completed 200 OK in 16ms (Views: 14.5ms | Allocations: 5299)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 13:05:23 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 2.3ms | Allocations: 299)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.7ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4112)
+Completed 200 OK in 16ms (Views: 14.0ms | Allocations: 5255)
+
+
+Started POST "/employee/emp_add" for ::1 at 2021-06-17 13:05:37 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/employee/emp_add"):
+  
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 13:09:31 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 1.1ms | Allocations: 652)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.4ms | Allocations: 243)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3976)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 4526)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 13:09:32 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 0.8ms | Allocations: 186)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.6ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3526)
+Completed 200 OK in 13ms (Views: 12.1ms | Allocations: 3931)
+
+
+Started POST "/employee/emp_add" for ::1 at 2021-06-17 13:09:33 +0530
+Processing by EmployeeController#emp_add as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_add.html.erb within layouts/application
+  Rendered employee/_header.html.erb (Duration: 0.5ms | Allocations: 253)
+  Rendered employee/emp_add.html.erb within layouts/application (Duration: 2.1ms | Allocations: 926)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.7ms | Allocations: 239)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4280)
+Completed 200 OK in 12ms (Views: 10.5ms | Allocations: 4849)
+
+
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 13:09:36 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 0.8ms | Allocations: 186)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.4ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 3526)
+Completed 200 OK in 19ms (Views: 18.6ms | Allocations: 3933)
+
+
