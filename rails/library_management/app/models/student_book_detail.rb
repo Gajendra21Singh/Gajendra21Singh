@@ -1,3 +1,0 @@
-class StudentBookDetail < ApplicationRecord
-  
-end
