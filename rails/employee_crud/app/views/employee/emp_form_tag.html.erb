@@ -7,7 +7,7 @@
   <body>
     <h1 align='center'>Form tag</h1>
     <table align='center',border='1'>
-    <%= form_tag(url: {controller: 'employee',action: 'employee_add'},method: :get) do %>
+    <%= form_tag(url: {controller: 'employee',action: 'employee_add'}) do %>
       <tr>
         <td>Name</td>
         <td><%= text_field_tag :emp_name %></td>

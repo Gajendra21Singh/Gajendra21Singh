@@ -27,8 +27,8 @@ class EmployeeController < ApplicationController
     puts "============================="
     puts "Params = #{params}"
     emp = params[:employee]
-    #puts "Employe = #{emp}"
-    #puts "Required = #{params.require(:employee)}"
+    puts "Employe = #{emp}"
+    puts "Required = #{params.require(:employee)}"
     permitted = params.require(:employee).permit(:emp_name,:email_id,:mobile_no,:address,:salary)
     if permitted.permitted?
       emp = Employee.create(emp_name:permitted[:emp_name],email_id:permitted[:email_id],mobile_no:permitted[:mobile_no],
@@ -113,5 +113,5 @@ class EmployeeController < ApplicationController
 
   def emp_form_tag
 
-  end  
+  end
 end

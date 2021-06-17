@@ -16047,3 +16047,579 @@ Started POST "/employee/emp_form_tag?method=get&url%5Baction%5D=employee_add&url
   
 ActionController::RoutingError (No route matches [POST] "/employee/emp_form_tag"):
   
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:32:23 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 2.5ms | Allocations: 599)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.7ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4414)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 5562)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:32:24 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.1ms | Allocations: 347)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.5ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3688)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 4094)
+
+
+Started POST "/employee/emp_form_tag?method=get&url%5Baction%5D=employee_add&url%5Bcontroller%5D=employee" for ::1 at 2021-06-17 12:32:35 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/employee/emp_form_tag"):
+  
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:33:47 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.2ms | Allocations: 601)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.8ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4416)
+Completed 200 OK in 15ms (Views: 12.4ms | Allocations: 5565)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:33:49 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 0.9ms | Allocations: 347)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.5ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3688)
+Completed 200 OK in 10ms (Views: 8.8ms | Allocations: 4094)
+
+
+Started POST "/employee/emp_form_tag?url%5Baction%5D=employee_add&url%5Bcontroller%5D=employee&url%5Bmethod%5D=get" for ::1 at 2021-06-17 12:33:56 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/employee/emp_form_tag"):
+  
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:34:07 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.6ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.5ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3685)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 4090)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:34:08 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.6ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.7ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3686)
+Completed 200 OK in 11ms (Views: 9.9ms | Allocations: 4092)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:35:40 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1326)
+Completed 500 Internal Server Error in 5ms (Allocations: 2445)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 align='center'>Form tag</h1>
+    <table align='center',border='1'>
+    <%= form_tag(url: {controller: 'employee',action: 'employee_add'},{method: 'get'}) do %>
+      <tr>
+        <td>Name</td>
+        <td><%= text_field_tag :emp_name %></td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td><%= text_field_tag :email_id %></td>
+      </tr>
+      <tr>
+          <td>Mobile</td>
+          <td><%= text_field_tag :mobile_no %></td>
+      </tr>
+      <tr>
+        <td>salary</td>
+        <td><%= text_field_tag :salary %></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><%= text_field_tag :address %></td>
+      </tr>
+      <tr>
+        <td><%= submit_tag "Create" %></td>
+      </tr>
+    </table>
+    <% end %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html lang="en" dir="ltr">
+3:      <head>
+4:        <meta charset="utf-8">
+5:        <title></title>
+6:      </head>
+7:      <body>
+8:        <h1 align='center'>Form tag</h1>
+9:        <table align='center',border='1'>
+10:        <%= form_tag(url: {controller: 'employee',action: 'employee_add'},{method: 'get'}) do %>
+11:          <tr>
+12:            <td>Name</td>
+13:            <td><%= text_field_tag :emp_name %></td>
+14:          </tr>
+15:          <tr>
+16:            <td>email</td>
+17:            <td><%= text_field_tag :email_id %></td>
+18:          </tr>
+19:          <tr>
+20:              <td>Mobile</td>
+21:              <td><%= text_field_tag :mobile_no %></td>
+22:          </tr>
+23:          <tr>
+24:            <td>salary</td>
+25:            <td><%= text_field_tag :salary %></td>
+26:          </tr>
+27:          <tr>
+28:            <td>Address</td>
+29:            <td><%= text_field_tag :address %></td>
+30:          </tr>
+31:          <tr>
+32:            <td><%= submit_tag "Create" %></td>
+33:          </tr>
+34:        </table>
+35:        <% end %>
+36:      </body>
+37:    </html>
+  
+app/views/employee/emp_form_tag.html.erb:10: syntax error, unexpected ')', expecting =>
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:10: syntax error, unexpected ')', expecting =>
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:10: syntax error, unexpected ')', expecting =>
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:10: syntax error, unexpected ')', expecting =>
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:10: syntax error, unexpected ')', expecting =>
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:10: syntax error, unexpected ')', expecting =>
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:36:00 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 2.3ms | Allocations: 587)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 1.0ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 4402)
+Completed 200 OK in 15ms (Views: 13.7ms | Allocations: 5550)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:40:43 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1326)
+Completed 500 Internal Server Error in 6ms (Allocations: 2445)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 align='center'>Form tag</h1>
+    <table align='center',border='1'>
+      <%= form_tag({:controller => "employee", :action => "employee_add"}, :method => "get") %>
+      <tr>
+        <td>Name</td>
+        <td><%= text_field_tag :emp_name %></td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td><%= text_field_tag :email_id %></td>
+      </tr>
+      <tr>
+          <td>Mobile</td>
+          <td><%= text_field_tag :mobile_no %></td>
+      </tr>
+      <tr>
+        <td>salary</td>
+        <td><%= text_field_tag :salary %></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><%= text_field_tag :address %></td>
+      </tr>
+      <tr>
+        <td><%= submit_tag "Create" %></td>
+      </tr>
+    </table>
+    <% end %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html lang="en" dir="ltr">
+3:      <head>
+4:        <meta charset="utf-8">
+5:        <title></title>
+6:      </head>
+7:      <body>
+8:        <h1 align='center'>Form tag</h1>
+9:        <table align='center',border='1'>
+10:          <%= form_tag({:controller => "employee", :action => "employee_add"}, :method => "get") %>
+11:          <tr>
+12:            <td>Name</td>
+13:            <td><%= text_field_tag :emp_name %></td>
+14:          </tr>
+15:          <tr>
+16:            <td>email</td>
+17:            <td><%= text_field_tag :email_id %></td>
+18:          </tr>
+19:          <tr>
+20:              <td>Mobile</td>
+21:              <td><%= text_field_tag :mobile_no %></td>
+22:          </tr>
+23:          <tr>
+24:            <td>salary</td>
+25:            <td><%= text_field_tag :salary %></td>
+26:          </tr>
+27:          <tr>
+28:            <td>Address</td>
+29:            <td><%= text_field_tag :address %></td>
+30:          </tr>
+31:          <tr>
+32:            <td><%= submit_tag "Create" %></td>
+33:          </tr>
+34:        </table>
+35:        <% end %>
+36:      </body>
+37:    </html>
+  
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:41:20 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1240)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1321)
+Completed 500 Internal Server Error in 6ms (Allocations: 2440)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 align='center'>Form tag</h1>
+    <table align='center',border='1'>
+      <%= form_tag({controller: "employee",action: "employee_add"},method: "get") %>
+      <tr>
+        <td>Name</td>
+        <td><%= text_field_tag :emp_name %></td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td><%= text_field_tag :email_id %></td>
+      </tr>
+      <tr>
+          <td>Mobile</td>
+          <td><%= text_field_tag :mobile_no %></td>
+      </tr>
+      <tr>
+        <td>salary</td>
+        <td><%= text_field_tag :salary %></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><%= text_field_tag :address %></td>
+      </tr>
+      <tr>
+        <td><%= submit_tag "Create" %></td>
+      </tr>
+    </table>
+    <% end %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html lang="en" dir="ltr">
+3:      <head>
+4:        <meta charset="utf-8">
+5:        <title></title>
+6:      </head>
+7:      <body>
+8:        <h1 align='center'>Form tag</h1>
+9:        <table align='center',border='1'>
+10:          <%= form_tag({controller: "employee",action: "employee_add"},method: "get") %>
+11:          <tr>
+12:            <td>Name</td>
+13:            <td><%= text_field_tag :emp_name %></td>
+14:          </tr>
+15:          <tr>
+16:            <td>email</td>
+17:            <td><%= text_field_tag :email_id %></td>
+18:          </tr>
+19:          <tr>
+20:              <td>Mobile</td>
+21:              <td><%= text_field_tag :mobile_no %></td>
+22:          </tr>
+23:          <tr>
+24:            <td>salary</td>
+25:            <td><%= text_field_tag :salary %></td>
+26:          </tr>
+27:          <tr>
+28:            <td>Address</td>
+29:            <td><%= text_field_tag :address %></td>
+30:          </tr>
+31:          <tr>
+32:            <td><%= submit_tag "Create" %></td>
+33:          </tr>
+34:        </table>
+35:        <% end %>
+36:      </body>
+37:    </html>
+  
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/employee/emp_form_tag.html.erb:40: syntax error, unexpected end, expecting end-of-input
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:41:41 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.9ms | Allocations: 587)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.8ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4402)
+Completed 200 OK in 15ms (Views: 13.2ms | Allocations: 5550)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:41:44 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.0ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.7ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3676)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 4082)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:42:22 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.8ms | Allocations: 600)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 1.3ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4413)
+Completed 200 OK in 13ms (Views: 11.1ms | Allocations: 5556)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:43:52 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.8ms | Allocations: 599)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.8ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4412)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 5555)
+
+
+Started POST "/employee/emp_form_tag?method=get&url%5Baction%5D=employee_add&url%5Bcontroller%5D=employee" for ::1 at 2021-06-17 12:44:01 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/employee/emp_form_tag"):
+  
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:44:06 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.0ms | Allocations: 347)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.6ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3689)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 4095)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:44:13 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.1ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.6ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3685)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 4090)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:44:20 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.9ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.7ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3685)
+Completed 200 OK in 12ms (Views: 11.4ms | Allocations: 4090)
+
+
+Started POST "/employee/emp_form_tag?method=get&url%5Baction%5D=employee_add&url%5Bcontroller%5D=employee" for ::1 at 2021-06-17 12:45:31 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/employee/emp_form_tag"):
+  
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:46:32 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 1.0ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4835)
+Completed 200 OK in 10ms (Views: 8.6ms | Allocations: 5988)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:46:33 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.0ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.6ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3676)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 4082)
+
+
+Started POST "/employee/emp_form_tag?url%5Baction%5D=employee_add&url%5Bcontroller%5D=employee" for ::1 at 2021-06-17 12:46:40 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/employee/emp_form_tag"):
+  
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:47:38 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.2ms | Allocations: 791)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.4ms | Allocations: 245)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4117)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 4666)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:47:39 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.1ms | Allocations: 333)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.4ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3673)
+Completed 200 OK in 9ms (Views: 8.0ms | Allocations: 4078)
+
+
+Started POST "/employee/emp_form_tag?url%5Baction%5D=employee_add&url%5Bcontroller%5D=employee" for ::1 at 2021-06-17 12:47:46 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "emp_name"=>"pankaj", "email_id"=>"pankaj@gmail.com", "mobile_no"=>"8989789678", "salary"=>"2222", "address"=>"renukoot", "commit"=>"Create", "url"=>{"action"=>"employee_add", "controller"=>"employee"}}
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 0.5ms | Allocations: 328)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 1.8ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3682)
+Completed 200 OK in 9ms (Views: 8.8ms | Allocations: 4157)
+
+
+Started GET "/" for ::1 at 2021-06-17 12:48:00 +0530
+Processing by EmployeeController#emp_home as HTML
+  [1m[36mEmployee Load (1.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" ORDER BY "employees"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/employee_controller.rb:15:in `emp_home'
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_home.html.erb within layouts/application
+  [1m[36mEmployee Load (1.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employee/emp_home.html.erb:15
+  Rendered employee/emp_home.html.erb within layouts/application (Duration: 9.3ms | Allocations: 6593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.4ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 9936)
+Completed 200 OK in 449ms (Views: 13.1ms | ActiveRecord: 141.8ms | Allocations: 19791)
+
+
+Started GET "/employee/emp_add" for ::1 at 2021-06-17 12:49:43 +0530
+Processing by EmployeeController#emp_add as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_add.html.erb within layouts/application
+  Rendered employee/_header.html.erb (Duration: 3.1ms | Allocations: 708)
+  Rendered employee/emp_add.html.erb within layouts/application (Duration: 34.5ms | Allocations: 1401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.4ms | Allocations: 239)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 4721)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms | Allocations: 5405)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:49:48 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.0ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.6ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3675)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 4081)
+
+
+Started GET "/employee/emp_form_tag" for ::1 at 2021-06-17 12:49:50 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.0ms | Allocations: 333)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 1.1ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3673)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 4078)
+
+
+Started POST "/employee/emp_form_tag?url%5Baction%5D=employee_add&url%5Bcontroller%5D=employee" for ::1 at 2021-06-17 12:49:58 +0530
+Processing by EmployeeController#emp_form_tag as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "emp_name"=>"pankaj", "email_id"=>"pankaj@gmail.com", "mobile_no"=>"8989789678", "salary"=>"2222", "address"=>"renukoot", "commit"=>"Create", "url"=>{"action"=>"employee_add", "controller"=>"employee"}}
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_form_tag.html.erb within layouts/application
+  Rendered employee/emp_form_tag.html.erb within layouts/application (Duration: 1.1ms | Allocations: 328)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.6ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3682)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 4145)
+
+
