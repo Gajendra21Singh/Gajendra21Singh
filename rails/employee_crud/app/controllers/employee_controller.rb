@@ -110,4 +110,8 @@ class EmployeeController < ApplicationController
   def delete_page
 
   end
+
+  def emp_form_tag
+
+  end  
 end

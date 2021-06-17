@@ -1,4 +1,4 @@
-<%= render "search" %>
+<%= current_page?(controller: 'employee',action: 'emp_home') %>
 <h1 align='center'>Employees List</h1>
 <table align='center' , border = '1'>
   <tr>
@@ -7,7 +7,10 @@
     <td>Mobile No</td>
     <td>Salary</td>
     <td>Address</td>
+    <td>Like_to_if</td>
+    <td>LIKE UNLESS</td>
     <td colspan="2">Action</td>
+    <td>LIKE UNLESS CURRENT</td>
   </tr>
   <% @employees.each do |emp| %>
   <tr>
@@ -16,8 +19,11 @@
     <td><%= emp[:mobile_no] %></td>
     <td><%= emp[:salary] %></td>
     <td><%= emp[:address] %></td>
+    <td><%= link_to_if emp.nil?, "LINK_IF",{controller: "employee",action: "employee_search"},emp_name: emp[:emp_name]%></td>
+    <td><%= link_to_unless emp.nil?, "LINK_UNLESS",{controller: "employee",action: "employee_search"},method: "post",emp_name: emp[:emp_name]%></td>
     <td><%= link_to "Edit",controller: "employee",action: "employee_edit",id: emp[:id]%></td>
     <td><%= link_to "Delete",controller: "employee",action: "employee_delete",id: emp[:id]%></td>
+    <td><%= link_to_unless_current "LINK_UNLESS_CURRENT", {controller: "employee",action: "employee_search"},emp_name: emp[:emp_name] %> </td>
   </tr>
   <% end %>
 </table>

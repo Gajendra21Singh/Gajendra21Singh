@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 align='center'>Form tag</h1>
+    <table align='center',border='1'>
+    <%= form_tag(url: {controller: 'employee',action: 'employee_add'},method: :get) do %>
+      <tr>
+        <td>Name</td>
+        <td><%= text_field_tag :emp_name %></td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td><%= text_field_tag :email_id %></td>
+      </tr>
+      <tr>
+          <td>Mobile</td>
+          <td><%= text_field_tag :mobile_no %></td>
+      </tr>
+      <tr>
+        <td>salary</td>
+        <td><%= text_field_tag :salary %></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><%= text_field_tag :address %></td>
+      </tr>
+      <tr>
+        <td><%= submit_tag "Create" %></td>
+      </tr>
+    </table>
+    <% end %>
+  </body>
+</html>
