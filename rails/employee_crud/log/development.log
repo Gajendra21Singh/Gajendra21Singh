@@ -16836,3 +16836,271 @@ Processing by EmployeeController#button_tag as HTML
 Completed 200 OK in 19ms (Views: 18.6ms | Allocations: 3933)
 
 
+Started GET "/employee/button_tag" for ::1 at 2021-06-17 13:13:37 +0530
+Processing by EmployeeController#button_tag as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employee/button_tag.html.erb within layouts/application
+  Rendered employee/button_tag.html.erb within layouts/application (Duration: 1.3ms | Allocations: 352)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 0.9ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4167)
+Completed 200 OK in 13ms (Views: 11.1ms | Allocations: 5315)
+
+
+Started GET "/" for ::1 at 2021-06-17 13:17:45 +0530
+Processing by EmployeeController#emp_home as HTML
+  [1m[36mEmployee Load (1.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees" ORDER BY "employees"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/employee_controller.rb:15:in `emp_home'
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_home.html.erb within layouts/application
+  [1m[36mEmployee Load (1.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employee/emp_home.html.erb:15
+  Rendered employee/emp_home.html.erb within layouts/application (Duration: 28.2ms | Allocations: 6567)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 2.9ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 106.2ms | Allocations: 9847)
+Completed 200 OK in 910ms (Views: 105.9ms | ActiveRecord: 50.1ms | Allocations: 21635)
+
+
+Started GET "/" for ::1 at 2021-06-17 13:19:19 +0530
+Processing by EmployeeController#emp_home as HTML
+  [1m[36mEmployee Load (2.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees" ORDER BY "employees"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/employee_controller.rb:15:in `emp_home'
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_home.html.erb within layouts/application
+  Rendered employee/emp_home.html.erb within layouts/application (Duration: 17.2ms | Allocations: 1299)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 1380)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 2.1ms | Allocations: 3358)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= current_page?(controller: 'employee',action: 'emp_home') %>
+<%= link_to "Google, "https://www.google.com/",target="_blank" %>
+<h1 align='center'>Employees List</h1>
+<table align='center' , border = '1'>
+  <tr>
+    <td>Name</td>
+    <td>Email Id</td>
+    <td>Mobile No</td>
+    <td>Salary</td>
+    <td>Address</td>
+    <td>Like_to_if</td>
+    <td>LIKE UNLESS</td>
+    <td colspan="2">Action</td>
+    <td>LIKE UNLESS CURRENT</td>
+  </tr>
+  <% @employees.each do |emp| %>
+  <tr>
+    <td><%= emp[:emp_name] %></td>
+    <td><%= emp[:email_id] %></td>
+    <td><%= emp[:mobile_no] %></td>
+    <td><%= emp[:salary] %></td>
+    <td><%= emp[:address] %></td>
+    <td><%= link_to_if emp.nil?, "LINK_IF",{controller: "employee",action: "employee_search"},emp_name: emp[:emp_name]%></td>
+    <td><%= link_to_unless emp.nil?, "LINK_UNLESS",{controller: "employee",action: "employee_search"},method: "post",emp_name: emp[:emp_name]%></td>
+    <td><%= link_to "Edit",controller: "employee",action: "employee_edit",id: emp[:id]%></td>
+    <td><%= link_to "Delete",controller: "employee",action: "employee_delete",id: emp[:id]%></td>
+    <td><%= link_to_unless_current "LINK_UNLESS_CURRENT", {controller: "employee",action: "employee_search"},emp_name: emp[:emp_name] %> </td>
+  </tr>
+  <% end %>
+</table>
+
+):
+1:    <%= current_page?(controller: 'employee',action: 'emp_home') %>
+2:    <%= link_to "Google, "https://www.google.com/",target="_blank" %>
+3:    <h1 align='center'>Employees List</h1>
+4:    <table align='center' , border = '1'>
+5:      <tr>
+6:        <td>Name</td>
+7:        <td>Email Id</td>
+8:        <td>Mobile No</td>
+9:        <td>Salary</td>
+10:        <td>Address</td>
+11:        <td>Like_to_if</td>
+12:        <td>LIKE UNLESS</td>
+13:        <td colspan="2">Action</td>
+14:        <td>LIKE UNLESS CURRENT</td>
+15:      </tr>
+16:      <% @employees.each do |emp| %>
+17:      <tr>
+18:        <td><%= emp[:emp_name] %></td>
+19:        <td><%= emp[:email_id] %></td>
+20:        <td><%= emp[:mobile_no] %></td>
+21:        <td><%= emp[:salary] %></td>
+22:        <td><%= emp[:address] %></td>
+23:        <td><%= link_to_if emp.nil?, "LINK_IF",{controller: "employee",action: "employee_search"},emp_name: emp[:emp_name]%></td>
+24:        <td><%= link_to_unless emp.nil?, "LINK_UNLESS",{controller: "employee",action: "employee_search"},method: "post",emp_name: emp[:emp_name]%></td>
+25:        <td><%= link_to "Edit",controller: "employee",action: "employee_edit",id: emp[:id]%></td>
+26:        <td><%= link_to "Delete",controller: "employee",action: "employee_delete",id: emp[:id]%></td>
+27:        <td><%= link_to_unless_current "LINK_UNLESS_CURRENT", {controller: "employee",action: "employee_search"},emp_name: emp[:emp_name] %> </td>
+28:      </tr>
+29:      <% end %>
+30:    </table>
+  
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:2: unknown regexp options - www
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:33: unterminated string meets end of file
+app/views/employee/emp_home.html.erb:33: syntax error, unexpected end-of-input, expecting ')'
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:2: unknown regexp options - www
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:33: unterminated string meets end of file
+app/views/employee/emp_home.html.erb:33: syntax error, unexpected end-of-input, expecting ')'
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:2: unknown regexp options - www
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:33: unterminated string meets end of file
+app/views/employee/emp_home.html.erb:33: syntax error, unexpected end-of-input, expecting ')'
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:2: unknown regexp options - www
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:33: unterminated string meets end of file
+app/views/employee/emp_home.html.erb:33: syntax error, unexpected end-of-input, expecting ')'
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:2: unknown regexp options - www
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:33: unterminated string meets end of file
+app/views/employee/emp_home.html.erb:33: syntax error, unexpected end-of-input, expecting ')'
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:2: unknown regexp options - www
+app/views/employee/emp_home.html.erb:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/employee/emp_home.html.erb:33: unterminated string meets end of file
+app/views/employee/emp_home.html.erb:33: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for ::1 at 2021-06-17 13:19:40 +0530
+Processing by EmployeeController#emp_home as HTML
+  [1m[36mEmployee Load (1.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees" ORDER BY "employees"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/employee_controller.rb:15:in `emp_home'
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_home.html.erb within layouts/application
+  Rendered employee/emp_home.html.erb within layouts/application (Duration: 14.6ms | Allocations: 2301)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 2381)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.6ms | Allocations: 4361)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "_blank":String):
+    1: <%= current_page?(controller: 'employee',action: 'emp_home') %>
+    2: <%= link_to "Google", "https://www.google.com/",target="_blank" %>
+    3: <h1 align='center'>Employees List</h1>
+    4: <table align='center' , border = '1'>
+    5:   <tr>
+  
+app/views/employee/emp_home.html.erb:2
+Started GET "/" for ::1 at 2021-06-17 13:20:04 +0530
+Processing by EmployeeController#emp_home as HTML
+  [1m[36mEmployee Load (1.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" ORDER BY "employees"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/employee_controller.rb:15:in `emp_home'
+  Rendering layout layouts/application.html.erb
+  Rendering employee/emp_home.html.erb within layouts/application
+  [1m[36mEmployee Load (1.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employee/emp_home.html.erb:16
+  Rendered employee/emp_home.html.erb within layouts/application (Duration: 11.0ms | Allocations: 6600)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered employee/_header.html.erb (Duration: 1.5ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 10416)
+Completed 200 OK in 45ms (Views: 36.8ms | ActiveRecord: 2.7ms | Allocations: 12427)
+
+
