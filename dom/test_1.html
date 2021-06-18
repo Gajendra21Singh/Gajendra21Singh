@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="https://www.google.com/" method="post" name="validform" onsubmit = 'return checkValid()''>
+      <input type="text" name="u_name" value="" id="name"><br>
+      <input type="email" name="e_mail" value="" id="email"><br>
+      <input type="submit" name="" value="submit">
+    </form>
+  </body>
+  <script type="text/javascript">
+    function checkValid() {
+      console.log("*************")
+      var name = document.forms["validform"]["name"].value
+      var email = document.forms["validform"]["email"].value
+      console.log(name)
+      console.log(email)
+      return false;
+    }
+  </script>
+</html>
